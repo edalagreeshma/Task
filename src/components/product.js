@@ -17,6 +17,6 @@ const Product = ({ productData }) => {
       ))}
     </div>      
   );
-};
+}; 
 
 export default Product;
