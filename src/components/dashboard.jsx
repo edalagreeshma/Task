@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 const Dashboard = () => {
-  const [activeTab, setActiveTab] = useState('dashboard');
+  const [, setActiveTab] = useState('dashboard');
 
   const handleTabClick = (tab) => {
     setActiveTab(tab);

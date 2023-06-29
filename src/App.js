@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Sidebar from './components/sidebar';
 import Dashboard from './components/dashboard';
 import Product from './components/product';
+import AdminSection from './components/adminsection'; 
 import './App.css';
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Dashboard />} />
             <Route path="/product" element={<Product productData={productData} />} />
+            <Route path="/admin" element={<AdminSection />} />
           </Routes>
         </div>
       </div>
