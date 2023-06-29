@@ -1,10 +1,23 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Dashboard = () => {
+  const [activeTab, setActiveTab] = useState('dashboard');
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <div className="dashboard">
-      {/* <h2>Dashboard</h2> */}
-      {/* Add dashboard content here */}
+      <button>products</button>  
+      <button>users</button>  
+
+      <button>rating</button>  
+
+      <button>total users</button>  
+
+
+      
     </div>
   );
 };

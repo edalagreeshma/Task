@@ -18,12 +18,12 @@ const Sidebar = ({ getProductData }) => {
       <ul className="nav-links">
         <li>
           <Link to="/" className="active">
-            <i className='bx bx-home'></i>
-            <span className="links_name">dashboard</span>
+            dashboard
+            {/* <span className="links_name">dashboard</span> */}
           </Link>
         </li>
         <li>
-          <Link to="/product" className="active" onClick={handleProductClick}>
+          <Link to="/product" className="product-button" onClick={handleProductClick}>
             <i className='bx bx-home'></i>
             <span className="links_name">product</span>
           </Link>
@@ -32,7 +32,7 @@ const Sidebar = ({ getProductData }) => {
 
       {showProductData && (
         <div className="product-data">
-          {/* Display the fetched product data */}
+     
         </div>
       )}
     </div>

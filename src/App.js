@@ -10,8 +10,7 @@ const App = () => {
   const [productData, setProductData] = useState([]);
 
   const getProductData = () => {
-    // Fetch the product data and update the state
-    // Here, you can fetch the data from an API or any other source
+    
     const fetchedProductData = [
       {
         "product_name": "coffee",

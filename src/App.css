@@ -1,84 +1,128 @@
-/* app.css */
-
-/* Overall layout */
-.App {
+.app {
   display: flex;
 }
 
-/* Sidebar */
 .sidebar {
-  height: 100vh;
   width: 200px;
-  background-color: #f0f0f0;
-  padding: 20px;
+  background-color: #dfdada;
 }
 
-.sidebar .logo-details {
+.sidebar button {
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  width: 100%;
+  padding: 12px;
+  border: none;
+  text-align: left;
+  background-color: inherit;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.sidebar .logo-details i {
-  font-size: 1.5rem;
-  color: #333;
-  margin-right: 5px;
+.sidebar button:hover {
+  background-color: #c21ea1;
 }
 
-.sidebar .logo-details .logo_name {
-  font-size: 1.5rem;
-  color: #333;
+.sidebar button.active {
+  background-color: #f4f4fa;
+  color: rgb(231, 237, 232);
 }
 
-.sidebar .nav-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.content {
+  flex: 10;
+  padding: 20px;
+  background-color: #9bc0eb;
+}
+.dashboard {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.sidebar .nav-links li {
+.dashboard .sidenav button {
+  margin-bottom: 200px;
+}
+.dashboard .sidenav {
+  justify-content: flex-start; 
+}
+
+.dashboard .sidenav button {
+  margin-bottom: 200px;
+  flex-basis: 200px;
+  
+}
+.dashboard .sidenav {
+  display: flex;
+   
+  justify-content: flex-start;
+}
+
+.dashboard .sidenav button {
+  margin-right: 10px; 
+  margin-bottom: 200px;
+  flex: 1; 
+  flex-basis: 200px;
+}
+
+.button-container {
+  display: flex; 
+  justify-content: flex-start; 
+  display:inline-block;
+  margin-left: 20px;
+  width: 30vw;
+
+}
+
+.button-container button {
+  margin-right: 10px; 
+  display:inline-block;
+  width: 50vw;
+  
+}
+
+
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.product-item {
+  width: 200px;
+  margin-right: 10px;
   margin-bottom: 10px;
 }
 
-.sidebar .nav-links a {
+.product-item img {
+  width: 100%;
+  height: auto;
   display: flex;
-  align-items: center;
+}
+
+.product-item h3 {
+  margin-top: 20px;
+  font-size: 20px;
+}
+.active{
+  background-color: #f3f1f0;
+  width: 200px;
+  height: 200px;
+}
+.product-button {
+  background-color: rgb(235, 247, 247);
+}
+.add-to-cart {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  text-align: center;
   text-decoration: none;
-  color: #333;
+  display: inline-block;
+  font-size: 14px;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
-.sidebar .nav-links a.active {
-  color: #fff;
-  background-color: #333;
-  padding: 8px;
-  border-radius: 5px;
-}
-
-.sidebar .nav-links a i {
-  font-size: 1.2rem;
-  margin-right: 10px;
-}
-
-.sidebar .nav-links .links_name {
-  font-size: 0.9rem;
-}
-
-/* Content area */
-.content {
-  flex: 1;
-  padding: 20px;
-}
-
-/* Dashboard */
-.dashboard {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
-}
-
-/* Product */
-.product {
-  background-color: #ffffff;
-  padding: 20px;
-  margin-bottom: 20px;
+.add-to-cart:hover {
+  background-color: #45a049;
 }
